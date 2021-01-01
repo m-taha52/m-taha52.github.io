@@ -1,0 +1,231 @@
+<html>
+    <head>
+        <link href="bill.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+        $(document).ready(function() {
+            $(".Burgers").hide();
+            $(".Chicken").hide();
+            $(".Breakfast").hide();
+            $(".Extras").hide();
+            $(".Drinks").hide();
+        })
+        $(document).ready(function(){
+            $('#burger_chk').click(function(){
+            if($(this).is(":checked")){
+                $(".Burgers").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $(".Burgers").hide()
+             ;
+            }
+        });
+    });
+
+    $(document).ready(function(){
+            $('#chicken_chk').click(function(){
+            if($(this).is(":checked")){
+                $(".Chicken").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $(".Chicken").hide()
+             ;
+            }
+        });
+    });
+
+    
+    $(document).ready(function(){
+            $('#breakfast_chk').click(function(){
+            if($(this).is(":checked")){
+                $(".Breakfast").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $(".Breakfast").hide()
+             ;
+            }
+        });
+    });
+
+    $(document).ready(function(){
+            $('#extras_chk').click(function(){
+            if($(this).is(":checked")){
+                $(".Extras").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $(".Extras").hide()
+             ;
+            }
+        });
+    });
+
+    $(document).ready(function(){
+            $('#drinks_chk').click(function(){
+            if($(this).is(":checked")){
+                $(".Drinks").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $(".Drinks").hide()
+             ;
+            }
+        });
+    });
+        </script>
+    <script> 
+        function burgerbill() {
+        var myForm = document.getElementById("burger_form");
+          var txt = "";
+                    for(var x = 1; x < myForm.length; x++) {
+                            txt = txt + myForm.elements[x].name + "" + ":" + " " + myForm.elements[x].value + "<br>";
+                        document.getElementById("val").innerHTML = txt;
+                    }
+                    }
+        function chickenbill() {
+        var myForm = document.getElementById("chicken_form");
+          var txt = "";
+                    for(var x = 1; x < myForm.length; x++) {
+                            txt = txt + myForm.elements[x].name + "" + ":" + " " + myForm.elements[x].value + "<br>";
+                        document.getElementById("val2").innerHTML = txt;
+                    }
+                    }
+        function breakfastbill() {
+        var myForm = document.getElementById("breakfast_form");
+          var txt = "";
+                    for(var x = 1; x < myForm.length; x++) {
+                            txt = txt + myForm.elements[x].name + "" + ":" + " " + myForm.elements[x].value + "<br>";
+                        document.getElementById("val3").innerHTML = txt;
+                    }
+                    }
+        function extrasbill() {
+        var myForm = document.getElementById("extras_form");
+          var txt = "";
+                    for(var x = 1; x < myForm.length; x++) {
+                            txt = txt + myForm.elements[x].name + "" + ":" + " " + myForm.elements[x].value + "<br>";
+                        document.getElementById("val4").innerHTML = txt;
+                    }
+                    }
+        function drinksbill() {
+        var myForm = document.getElementById("drinks_form");
+          var txt = "";
+                    for(var x = 1; x < myForm.length; x++) {
+                            txt = txt + myForm.elements[x].name + "" + ":" + " " + myForm.elements[x].value + "<br>";
+                        document.getElementById("val5").innerHTML = txt;
+                    }
+                    }
+        
+         </script>
+
+    <div class="grid-container">
+        <div> 
+            <div class="container"> 
+                <form name="burgers" id="burger_form"> 
+                <div class="items"><span class="title"> Burger </span>  <input type="checkbox" id="burger_chk"> </div>
+                <div class="items">   <span class="Burgers label"> Cheese Burger </span>  <input type="number" name="Cheese Burger" class="Burgers"> </div>
+                <div class="items"> <span class="Burgers label"> Chicken Cheese Burger </span>  <input type="number" name="Chicken Cheese Burger" class="Burgers"> </div>
+                <div class="items">    
+                    <span class="Burgers label"> Beef Burger </span>  <input type="number" class="Burgers" name="Beef Burger"> </div>
+                <div class="items">    <span class="Burgers label"> Mayo Burger </span>  <input type="number" class="Burgers" name="Mayo Burger">  </div>
+                <div class="items">    <span class="Burgers label"> Barbeque  Burger </span>  <input type="number" class="Burgers" name="Barbeque Burger">  </div>
+                </form>
+                <span id="val"> </span>
+</div>
+</div>
+
+<div>
+    <div class="container"> 
+        <form name="Chicken" id="chicken_form">
+        <div class="items">    <span class="title"> Chicken </span>  <input type="checkbox" id="chicken_chk"> <br> </div>
+        <div class="items">    <span class="Chicken label label"> Chilly Chicken </span>  <input type="number" name="Chilly Chicken"  class="Chicken"> </div>
+        <div class="items">     <span class="Chicken label"> Butter chicken </span>  <input type="number" name="Butter Chicken" class="Chicken"> </div>
+        <div class="items"> <span class="Chicken label"> Teriyaki Chicken </span>  <input type="number" name="Teriyaki Chicken" class="Chicken"></div>
+        <div class="items">     
+        <span class="Chicken label"> Mayo Chicken </span>  <input type="number" name="Mayo Chicken" class="Chicken"> </div>  
+        <div class="items">   <span class="Chicken label"> Sekela Chicken </span>  <input type="number"  name="Sekela Chicken" class="Chicken">  </div>
+    </form>
+        <span id="val2"> </span>
+
+
+
+ 
+
+</div>
+</div>
+
+
+<div class="container"> 
+    <form name="Breakfast" id="breakfast_form">
+    <div class="items">     <span class="title"> Breakfast </span>  <input type="checkbox" id="breakfast_chk" >  </div>
+    <div class="items">     <span class="Breakfast label "> Waffles </span>  <input type="number"  class="Breakfast" name="Waffles"> </div>
+    <div class="items">     <span class="Breakfast label"> Omelette </span>  <input type="number" class="Breakfast" name="Omelette">  </div>
+    <div class="items">     <span class="Breakfast label"> Fruit salad </span>  <input type="number" class="Breakfast" name="Fruit Salad"> </div>
+    <div class="items">     <span class="Breakfast label"> Buttered Toast </span>  <input type="number" name="Buttered Toast" class="Breakfast">  </div>
+    <div class="items">     <span class="Breakfast label"> Thepla </span>  <input type="number" class="Breakfast" name="Thepla">  </div>
+</form>
+    <span id="val3"> </span>
+
+</div>
+
+<div class="container">
+    <form name="extras" id="extras_form">
+  <div class="items">  <span class="title"> Extras </span>  <input type="checkbox" id="extras_chk">  </div>
+
+        <div class="items">    <span class="Extras label "> Plain Naan </span>  <input type="number" name="Plain Naan" class="Extras"> </div>
+        <div class="items">     <span class="Extras label"> Butter Naan </span>  <input type="number" name="Butter Naan" class="Extras"> </div>
+        <div class="items"> <span class="Extras label"> Garlic Naan </span>  <input type="number" name="Garlic Naan" class="Extras"></div>
+        <div class="items">     
+        <span class="Extras label"> Cheese Naan </span>  <input type="number" name="Cheese Naan" class="Extras"> </div>  
+        <div class="items">   <span class="Extras label"> Hajam </span>  <input type="number" class="Extras" name="Hajam">  </div>
+    </form>
+        <span id="val4"> </span>
+  
+</div>
+
+
+
+
+<div class="container">
+    <form name="Drinks" id="drinks_form">
+    <div class="items">  <span class="title"> Drinks </span>  <input type="checkbox" id="drinks_chk">  </div>
+  
+          <div class="items">    <span class="Drinks label "> Water </span>  <input type="number" name="Water" class="Drinks"> </div>
+          <div class="items">     <span class="Drinks label"> Soda </span>  <input type="number" class="Drinks" name="Soda"> </div>
+          <div class="items" > <span class="Drinks label"> Mango Juice </span>  <input type="number" class="Drinks" name="Mango Juice"></div>
+          <div class="items">     
+          <span class="Drinks label"> Lime Juice </span>  <input type="number" name="Lime Juice" class="Drinks"> </div>  
+          <div class="items">   <span class="Drinks label"> Passion Juice </span>  <input type="number" name="Passion Juice" class="Drinks">  </div>
+        </form>
+          <span id="val5"> </span>
+  
+  </div>
+
+ <div class="container buttons"> 
+      <div class="items"> 
+          <button onclick="burgerbill()"> Show Burger</button>
+          
+      </div>
+      <div class="items"> 
+        <button onclick="chickenbill()"> Show Chicken</button>
+     
+      </div>
+      <div class="items">
+        <button onclick="breakfastbill()"> Show Breakfast</button>
+
+      </div>
+      <div class="items">
+        <button onclick="extrasbill()"> Show Extras</button>
+
+      </div>
+      <div class="items">
+        <button onclick="drinksbill()"> Show Drinks </button>
+    
+      </div>
+  </div> 
+  
+  
+
+</body>
+
+
+</html>

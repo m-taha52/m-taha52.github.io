@@ -1,0 +1,42 @@
+
+
+
+.Food {
+    display: block;
+    
+}
+input[type=number] {
+    background-color: #eee;
+    width: 80px;
+    padding: 12px 20px;
+    margin: 6px 0;
+    box-sizing: border-box;
+  }
+
+  .grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+
+  }
+  .label {
+    display: block;
+    padding-top: 7px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .items {
+flex-grow: 1;
+
+  }
+  button {
+    padding: 10px;
+    margin: 30px;
+  }
+
