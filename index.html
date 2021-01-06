@@ -1,7 +1,8 @@
 <html>
     <head>
         <link href="bill.css" rel="stylesheet" />
-    </head>
+        <link href="bootstrap.css" rel="stylesheet" />
+        
     <body>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script> 
@@ -121,7 +122,10 @@
         <div> 
             <div class="container"> 
                 <form name="burgers" id="burger_form"> 
-                <div class="items"><span class="title"> Burger </span>  <input type="checkbox" id="burger_chk"> </div>
+                    <div class="form_check"> 
+                        <input class="form-check-input" type="checkbox" value="" id="burger_chk">
+                        <label class="form-check-label" for="burger_chk"> Burger </label>
+            </div>
                 <div class="items">   <span class="Burgers label"> Cheese Burger </span>  <input type="number" name="Cheese Burger" class="Burgers"> </div>
                 <div class="items"> <span class="Burgers label"> Chicken Cheese Burger </span>  <input type="number" name="Chicken Cheese Burger" class="Burgers"> </div>
                 <div class="items">    
@@ -136,9 +140,12 @@
 <div>
     <div class="container"> 
         <form name="Chicken" id="chicken_form">
-        <div class="items">    <span class="title"> Chicken </span>  <input type="checkbox" id="chicken_chk"> <br> </div>
-        <div class="items">    <span class="Chicken label label"> Chilly Chicken </span>  <input type="number" name="Chilly Chicken"  class="Chicken"> </div>
+        <div class="form_check"> 
+            <input class="form-check-input" type="checkbox" value="" id="chicken_chk">
+            <label class="form-check-label" for="flexCheckDefault"> Chicken </label>
+</div>
         <div class="items">     <span class="Chicken label"> Butter chicken </span>  <input type="number" name="Butter Chicken" class="Chicken"> </div>
+        <div class="items">     <span class="Chicken label"> Chilly Chicken </span>  <input type="number" name="Chilly Chicken" class="Chicken"> </div>
         <div class="items"> <span class="Chicken label"> Teriyaki Chicken </span>  <input type="number" name="Teriyaki Chicken" class="Chicken"></div>
         <div class="items">     
         <span class="Chicken label"> Mayo Chicken </span>  <input type="number" name="Mayo Chicken" class="Chicken"> </div>  
@@ -156,7 +163,10 @@
 
 <div class="container"> 
     <form name="Breakfast" id="breakfast_form">
-    <div class="items">     <span class="title"> Breakfast </span>  <input type="checkbox" id="breakfast_chk" >  </div>
+        <div class="form_check"> 
+            <input class="form-check-input" type="checkbox" value="" id="breakfast_chk">
+            <label class="form-check-label" for="breakfast_chk"> Breakfast </label>
+</div>
     <div class="items">     <span class="Breakfast label "> Waffles </span>  <input type="number"  class="Breakfast" name="Waffles"> </div>
     <div class="items">     <span class="Breakfast label"> Omelette </span>  <input type="number" class="Breakfast" name="Omelette">  </div>
     <div class="items">     <span class="Breakfast label"> Fruit salad </span>  <input type="number" class="Breakfast" name="Fruit Salad"> </div>
@@ -169,7 +179,10 @@
 
 <div class="container">
     <form name="extras" id="extras_form">
-  <div class="items">  <span class="title"> Extras </span>  <input type="checkbox" id="extras_chk">  </div>
+        <div class="form_check"> 
+            <input class="form-check-input" type="checkbox" value="" id="extras_chk">
+            <label class="form-check-label" for="extras_chk"> Extras </label>
+</div>
 
         <div class="items">    <span class="Extras label "> Plain Naan </span>  <input type="number" name="Plain Naan" class="Extras"> </div>
         <div class="items">     <span class="Extras label"> Butter Naan </span>  <input type="number" name="Butter Naan" class="Extras"> </div>
@@ -187,9 +200,12 @@
 
 <div class="container">
     <form name="Drinks" id="drinks_form">
-    <div class="items">  <span class="title"> Drinks </span>  <input type="checkbox" id="drinks_chk">  </div>
   
-          <div class="items">    <span class="Drinks label "> Water </span>  <input type="number" name="Water" class="Drinks"> </div>
+    <div class="form_check"> 
+        <input class="form-check-input" type="checkbox" value="" id="drinks_chk">
+        <label class="form-check-label" for="drinks_chk"> Drinks </label>
+</div>
+<div class="items">     <span class="Drinks label"> Water </span>  <input type="number" class="Drinks" name="Water"> </div>
           <div class="items">     <span class="Drinks label"> Soda </span>  <input type="number" class="Drinks" name="Soda"> </div>
           <div class="items" > <span class="Drinks label"> Mango Juice </span>  <input type="number" class="Drinks" name="Mango Juice"></div>
           <div class="items">     
@@ -202,23 +218,23 @@
 
  <div class="container buttons"> 
       <div class="items"> 
-          <button onclick="burgerbill()"> Show Burger</button>
+          <button class="btn btn-primary" onclick="burgerbill()"> Show Burger</button>
           
       </div>
       <div class="items"> 
-        <button onclick="chickenbill()"> Show Chicken</button>
+        <button class="btn btn-primary" onclick="chickenbill()"> Show Chicken</button>
      
       </div>
       <div class="items">
-        <button onclick="breakfastbill()"> Show Breakfast</button>
+        <button class="btn btn-primary" onclick="breakfastbill()"> Show Breakfast</button>
 
       </div>
       <div class="items">
-        <button onclick="extrasbill()"> Show Extras</button>
+        <button class="btn btn-primary" onclick="extrasbill()"> Show Extras</button>
 
       </div>
       <div class="items">
-        <button onclick="drinksbill()"> Show Drinks </button>
+        <button class="btn btn-primary" onclick="drinksbill()"> Show Drinks </button>
     
       </div>
   </div> 
